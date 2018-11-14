@@ -1,3 +1,15 @@
+# Debian Jessie, cURL 7.38 CURLOPT_PINNEDPUBLICKEY fix
+
+<p>
+	Adds CURLOPT_PINNEDPUBLICKEY to satisfy compilation against cURL 7.38.0 on Debian Jessie.
+	(CURLOPT_PINNEDPUBLICKEY is available in cURL 7.39.0 and up)
+	
+
+	Add the following to your Package.swift:
+
+	.package(url: "https://github.com/datishans/Perfect-CURL.git", .branch("master"))
+</p>
+
 # Perfect-CURL
 
 <p align="center">
