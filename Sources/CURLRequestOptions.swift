@@ -20,6 +20,11 @@
 import cURL
 import PerfectLib
 
+#if os(Linux) 
+// fix for curl 7.38 on Debian Jessie
+let CURLOPT_PINNEDPUBLICKEY = CURLoption(10230)
+#endif
+
 extension CURLRequest.Option {
 	
 	private func headerAdd(_ curl: CURL, optName: CURLRequest.Header.Name, optValue: String) {
