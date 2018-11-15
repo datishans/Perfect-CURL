@@ -1,4 +1,4 @@
-# Debian Jessie, cURL 7.38 CURLOPT_PINNEDPUBLICKEY fix
+# 1) Debian Jessie, cURL 7.38 CURLOPT_PINNEDPUBLICKEY fix
 
 <p>
 	Adds CURLOPT_PINNEDPUBLICKEY to satisfy compilation against cURL 7.38.0 on Debian Jessie.
@@ -9,6 +9,10 @@
 
 	.package(url: "https://github.com/datishans/Perfect-CURL.git", .branch("master"))
 </p>
+
+# 2) add CURLOPT_RESOLVE through CURLRequest+resolve
+
+Helps dns resolve/caching on linux/debian
 
 # Perfect-CURL
 
