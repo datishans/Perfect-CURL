@@ -451,6 +451,10 @@ public class CURL {
 			CURLOPT_MAIL_RCPT.rawValue:
 			appendSList(key: option.rawValue, value: s)
 			return CURLE_OK
+               case CURLOPT_RESOLVE.rawValue:
+                        appendSList(key: option.rawValue, value: s)
+                        return CURLE_OK
+			
 		default:
 			()
 		}
